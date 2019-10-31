@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Local</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="VectorsMarket"><a href="https://www.flaticon.com/authors/vectors-market">Vectors Market</a></string>
+    <string name="Flat"><a href="https://www.flaticon.com/">www.flaticon.com</a></string>
+    <string-array name="spin">
+        <item>LOOK FOR:</item>
+        <item>HOTELS</item>
+        <item>CAFE</item>
+        <item>RESTAURANTS</item>
+        <item>BARS</item>
+        <item>SUPERMARKETS</item>
+        <item>GAS STATIONS</item>
+    </string-array>
+    <string-array name="spinadd">
+        <item>choose</item>
+        <item>Hotel</item>
+        <item>Cafe</item>
+        <item>Restaurant</item>
+        <item>Bar</item>
+        <item>Supermarket</item>
+        <item>Gas Station</item>
+    </string-array>
+</resources>

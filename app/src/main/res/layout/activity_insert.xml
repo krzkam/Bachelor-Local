@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.krzkam.local.InsertActivity"
+    android:layout_margin="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:fontFamily="sans-serif-condensed">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif-condensed">
+
+            <TextView
+                android:id="@+id/tv_inName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name*"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_inName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@null"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif-condensed">
+
+            <TextView
+                android:id="@+id/tv_inType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Type*"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spin_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif-condensed">
+
+            <TextView
+                android:id="@+id/tv_inAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_inAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif-condensed">
+
+            <TextView
+                android:id="@+id/tv_inPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_inPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:fontFamily="sans-serif-condensed">
+
+            <TextView
+                android:id="@+id/tv_inWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_inWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/b_SendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Place"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/button1"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="onSendClick"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
